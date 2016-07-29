@@ -1,0 +1,7 @@
+﻿<div class="wrap">
+    <p><h2><strong data-bind="text: header"></strong></h2></p>
+    <b>Following:</b><br>
+    <ul data-bind='foreach: feed'>
+        <li><a data-bind="attr: { href:'#read/' + _id}"><span data-bind='text: title'></span> by <span data-bind='text: author'></span></a></li>
+    </ul>
+</div>

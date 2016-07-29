@@ -1,0 +1,23 @@
+{
+  "name": "knockout_blog",
+  "version": "1.0.0",
+  "description": "blog data",
+  "main": "scripts/require/r.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maddie Nicolas",
+  "license": "ISC",
+  "dependencies": {
+    "lang": "^0.1.1",
+    "logger": "0.0.1",
+    "mongodb": "^2.2.1",
+    "mongodb-client": "0.0.0",
+    "parse": "^1.9.0",
+    "prim": "^1.0.0",
+    "requirejs": "^2.2.0"
+  },
+  "keywords": [
+    "blog"
+  ]
+}

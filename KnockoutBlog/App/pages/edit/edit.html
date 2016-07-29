@@ -1,0 +1,20 @@
+﻿<div class="wrap">
+    <p><h2><strong>Edit Blog: </strong><a data-bind="attr: { href:'#read/' + myBlogId}"><span data-bind="text: title"></span></a></h2></p>
+    <form data-bind="submit: saveChanges">
+        <p>
+            <b>Title: </b><input type="text" data-bind="value: title,  valueUpdate: 'afterkeydown'" />
+            <span data-bind='visible: title.hasError, text: title.validationMessage'> </span></p>
+        <p>
+            <b>Author: </b><input type="text" data-bind="value: author,  valueUpdate: 'afterkeydown'" />
+            <span data-bind='visible: author.hasError, text: author.validationMessage'> </span></p>
+        <p>
+            <b>Posts: </b><a data-bind="attr: { href:'#edit/new' }" class="new-post">Create New Post</a>
+            <ul data-bind="foreach: content">
+                <li><a data-bind="attr: { href:'#edit/' + pid}"><span data-bind='text: contentTitle'></span></a></li>
+            </ul>
+        </p>
+        <button type="submit" onclick="location.href = '#'" data-bind="disable: title.hasError() || author.hasError()">Save Changes</button>
+    </form>
+    <br />
+    <button onclick="location.href = '#'">Cancel</button>
+</div>

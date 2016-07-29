@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="Content/bstyle.css">
+	<meta charset="utf-8" />
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <h1 class="full-width">
+                <a href="#">
+                    <img src="App/pages/home/eMarketerLogo.png" alt="eMarketer Blogs" />blogs
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href='#feed'>feed</a></li>
+                        <li><a href='#edit'>edit</a></li>
+                    </ul>
+                </nav>
+            </h1>
+        </div>        
+    </header>
+
+    <div id="page" class="container" data-bind="component: { name: route().page, params: { route, id: route().id, pid: route().pid } }"></div>
+    
+    <script>var require = { config: function (c) { require = c } }</script>
+    <script src="App/boot/require.config.js"></script>
+    <script data-main="App/boot/startup" src="scripts/require/require.js"></script>
+    
+</body>
+</html>

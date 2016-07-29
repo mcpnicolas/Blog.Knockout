@@ -1,0 +1,15 @@
+﻿<div class="wrap">
+    <p><h2><strong>Edit Post: </strong><span data-bind="text: postTitle"></span></h2></p>
+    <form data-bind="submit: saveChanges">
+        <p>
+            <b>Title: </b><input type="text" data-bind="value: postTitle,  valueUpdate: 'afterkeydown'" />
+            <span data-bind='visible: postTitle.hasError, text: postTitle.validationMessage'> </span>
+        </p>
+        <p>
+            <b><label for="body">Body: </label></b><textarea type="text" rows="20" cols="50" data-bind="value: postBody,  valueUpdate: 'afterkeydown'" />
+        </p>
+        <button type="submit" onclick="location.href = '#edit'" data-bind="disable: postTitle.hasError()">Save Changes</button>     
+    </form>
+    <br />
+    <button onclick="location.href = '#edit'">Cancel</button> <button onclick="location.href = '#edit'" data-bind="click: deletePost">Delete Post</button>
+</div>

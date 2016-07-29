@@ -1,0 +1,90 @@
+﻿header, .full-width {
+    width: 100%;
+    background: #333;
+    text-decoration: none;
+    color: ghostwhite;
+    
+}
+
+header a { 
+    font-family: Courier New, Courier, monospace; 
+    font-stretch:extra-condensed;
+
+}
+
+header h1 a { 
+    color: ghostwhite;
+    font-weight: normal;
+}
+
+header nav { display: inline; }
+
+img {
+    width:190px;
+    height:44px;
+    vertical-align:middle;
+    margin-right:10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+    text-align: center;
+    background: #333;
+    
+}
+
+nav li {
+    color: ghostwhite;
+    font-weight: bold;
+    display: inline; 
+    font-size: 20px;
+    text-decoration: none;
+
+}
+
+nav li a {
+    color: ghostwhite;
+    text-decoration: none;
+    padding-left: 40px;
+    padding: 0.25em 0.625em;
+}
+
+nav li a:hover {
+    background: #111;
+}
+
+#page li a {
+    color: black;
+}
+
+#page li a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+  width: 80%;
+  max-width: 100em;
+  margin: 0 auto;
+  padding: 0.25em 0.625em;
+}
+
+body {
+    font-family:  Arial, Arial, Helvetica, sans-serif;
+}
+
+textarea { vertical-align: top; }
+
+.new-post,  h2 a { color: red; }
+
+.new-post:hover, h2 a:hover { text-decoration: underline; }
+    
+
+

@@ -1,0 +1,10 @@
+﻿<div class="wrap">
+    <p><h2><strong data-bind="text: title"></strong></h2></p>
+    <p><h3><strong>by <span data-bind="text: author"></span></strong></h3></p>
+    <div data-bind="foreach: content">
+        <p>
+            <b><span data-bind="text: contentTitle"></span></b> on <span data-bind="text: date"></span><br />
+            <span data-bind="text: contentBody"></span>
+        </p>
+    </div>
+</div>

@@ -1,0 +1,81 @@
+{
+  "name": "mongodb-client",
+  "version": "0.0.0",
+  "description": "mongodb-client",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "npm run lint && mocha -t 5000 test/*.test.js",
+    "test-cov": "istanbul cover _mocha -- -t 5000 test/*.test.js",
+    "lint": "eslint .",
+    "ci": "npm run lint && npm run test-cov",
+    "autod": "autod -w --prefix '~'"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autod": "*",
+    "eslint": "1",
+    "eslint-config-egg": "1",
+    "istanbul": "*",
+    "mocha": "*"
+  },
+  "homepage": "https://github.com/node-modules/mongodb-client",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/node-modules/mongodb-client.git",
+    "web": "https://github.com/node-modules/mongodb-client"
+  },
+  "bugs": {
+    "url": "https://github.com/node-modules/mongodb-client/issues",
+    "email": "m@fengmk2.com"
+  },
+  "keywords": [
+    "mongodb-client",
+    "mongodb",
+    "mongo"
+  ],
+  "engines": {
+    "node": ">=4.3.1"
+  },
+  "author": {
+    "name": "fengmk2",
+    "email": "m@fengmk2.com",
+    "url": "http://fengmk2.com"
+  },
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "fengmk2",
+      "email": "m@fengmk2.com",
+      "url": "https://fengmk2.com"
+    }
+  ],
+  "_id": "mongodb-client@0.0.0",
+  "_shasum": "817a6fada9c54ce47ef0c1f7a296d4960c91f257",
+  "_from": "mongodb-client@latest",
+  "_npmVersion": "2.14.12",
+  "_nodeVersion": "4.3.1",
+  "_npmUser": {
+    "name": "fengmk2",
+    "email": "fengmk2@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "fengmk2",
+      "email": "fengmk2@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "817a6fada9c54ce47ef0c1f7a296d4960c91f257",
+    "tarball": "https://registry.npmjs.org/mongodb-client/-/mongodb-client-0.0.0.tgz"
+  },
+  "_npmOperationalInternal": {
+    "host": "packages-6-west.internal.npmjs.com",
+    "tmp": "tmp/mongodb-client-0.0.0.tgz_1456328399918_0.256702936720103"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/mongodb-client/-/mongodb-client-0.0.0.tgz",
+  "readme": "ERROR: No README data found!"
+}
